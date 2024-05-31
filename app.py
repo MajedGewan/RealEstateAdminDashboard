@@ -94,7 +94,8 @@ row1 = dbc.Row([
                                                             ['Low', 'Medium', 'High', 'Ultra'],
                                                             inline=True,
                                                             id='quality',
-                                                            inputStyle={"margin-left": "70px"}
+                                                            inputStyle={"margin-left": "70px",
+                                                                        "margin-right": "5px"}
                                                         )
                                     ]
                                 ),
