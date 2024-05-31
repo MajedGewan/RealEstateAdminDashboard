@@ -16,7 +16,7 @@ dcc.DatePickerRange(
     end_date_placeholder_text='MMMM Y',
     start_date=date(2017, 6, 21)
 )
-app = Dash(__name__,external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__,external_stylesheets=[dbc.themes.CERULEAN])
 server = app.server
 price_from, price_to = data_handling.get_price_range()
 size_from, size_to = data_handling.get_size_range()
