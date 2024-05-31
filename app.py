@@ -51,7 +51,7 @@ row1 = dbc.Row([
                                 ),
                         dbc.Row(
                                     [
-                                        html.Label('Price:'),
+                                        html.Label('Price (AED):'),
                                         dcc.RangeSlider(price_from, price_to,
                                         value=[price_from, price_to],
                                         id='price-slider',
@@ -59,7 +59,7 @@ row1 = dbc.Row([
                                         tooltip={
                                             "placement": "bottom",
                                             "always_visible": False,
-                                            "template": "$ {value}"},
+                                            "template": "{value}"},
                                         ),
                                     ]
                                 ),
@@ -67,7 +67,7 @@ row1 = dbc.Row([
                                 
                         dbc.Row(
                                     [
-                                        html.Label('Size(sqft):'),
+                                        html.Label('Size (sqft):'),
                                         dcc.RangeSlider(size_from, size_to,
                                         value=[size_from, size_to],
                                         id='size-slider',
