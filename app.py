@@ -94,7 +94,7 @@ row1 = dbc.Row([
                                                             ['Low', 'Medium', 'High', 'Ultra'],
                                                             inline=True,
                                                             id='quality',
-                                                            inputStyle={"margin-left": "10px"}
+                                                            inputStyle={"margin-left": "70px"}
                                                         )
                                     ]
                                 ),
@@ -224,7 +224,7 @@ def update_graph(price, size, houses, neighborhoods, sources, bedrooms, quality,
             value = total_sales ,
             domain = {'row': 0, 'column': 1}))
         fig_total_price.update_layout(
-            #height=150,
+            height=250,
             template = {'data' : {'indicator': [{
                 'title': {'text': "Total sales"},
                 'mode' : "number",},
@@ -242,6 +242,7 @@ def update_graph(price, size, houses, neighborhoods, sources, bedrooms, quality,
                 'axis': {'range':[0,visits]}
             }
         ))
+        fig_deal.update_layout(height=250)
 
         
     except Exception as e:
