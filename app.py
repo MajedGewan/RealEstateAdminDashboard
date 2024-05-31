@@ -249,6 +249,3 @@ def update_graph(price, size, houses, neighborhoods, sources, bedrooms, quality,
     
     return (fig, table, fig_total_price, fig_deal)
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
-
